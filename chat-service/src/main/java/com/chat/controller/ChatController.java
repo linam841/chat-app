@@ -41,9 +41,11 @@ public class ChatController {
      * return The sent chat message.
      */
     @MessageMapping("/chat.sendMessage")
+    // this is web socket topic
     @SendTo("/topic/public")
     public ChatMessage sendMessage(@Payload ChatMessage chatMessage) {
-        messageProducer.sendMessage("public-0", chatMessage.getContent());
+        // this is kafka topic
+        messageProducer.sendMessage("messages.in-review", chatMessage.getContent());
         return chatMessage;
     }
 }
