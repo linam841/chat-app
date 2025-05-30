@@ -5,3 +5,8 @@ docker exec -it broker /opt/kafka/bin/kafka-topics.sh --create --topic messages.
 To run elastic search in docker container
 
 docker run -p 9200:9200 -e "discovery.type=single-node" elasticsearch:7.17.22
+
+
+Container execution history:
+docker ps -a
+
