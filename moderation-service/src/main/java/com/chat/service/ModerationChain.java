@@ -12,9 +12,10 @@ public class ModerationChain {
     RegexProfanityHandler regexProfanityHandlerHandler;
 
 
-    public ModerationChain(RegexProfanityHandler regexProfanityHandlerHandler,
+    public ModerationChain(RegexProfanityHandler regexProfanityHandlerHandler
 //                           SpamFilter spamFilter,
-//                           HateSpeechHandler hateFilter)
+//                           HateSpeechHandler hateFilter
+                           )
     {
         // Build chain: regex → spam → hate → ...
         this.regexProfanityHandlerHandler = regexProfanityHandlerHandler;

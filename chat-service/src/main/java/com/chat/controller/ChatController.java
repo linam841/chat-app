@@ -40,8 +40,11 @@ public class ChatController {
      * param chatMessage The chat message to be sent.
      * return The sent chat message.
      */
+
+
+    // !!!!! пользователь посылает чат айди в запросе
     @MessageMapping("/chat.sendMessage")
-    @SendTo("/topic/public")
+//    @SendTo("/topic/public") use instead SimpMessagingTemplate
     public ChatMessage sendMessage(@Payload ChatMessage chatMessage) {
         messageProducer.sendMessage("public-0", chatMessage.getContent());
         return chatMessage;
