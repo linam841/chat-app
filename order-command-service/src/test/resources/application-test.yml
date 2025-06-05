@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/test
+          jwk-set-uri: http://localhost:8080/realms/test/protocol/openid-connect/certs
+
+logging:
+  level:
+    cz.cvut.fel.nss: DEBUG
+    org.springframework.security: DEBUG
+    org.springframework.kafka: DEBUG 

@@ -1,0 +1,25 @@
+type Query {
+    order(id: ID!): Order
+    ordersByCustomer(customerId: String!): [Order]
+    ordersByStatus(status: String!): [Order]
+    ordersByCustomerAndStatus(customerId: String!, status: String!): [Order]
+}
+
+type Order {
+    id: ID!
+    customerId: String!
+    items: [OrderItem!]!
+    totalAmount: Float!
+    status: String!
+    shippingAddress: String!
+    billingAddress: String!
+    createdAt: String!
+    updatedAt: String
+}
+
+type OrderItem {
+    productId: String!
+    quantity: Int!
+    unitPrice: Float!
+    totalPrice: Float!
+} 

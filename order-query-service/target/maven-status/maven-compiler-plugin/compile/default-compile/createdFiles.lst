@@ -1,0 +1,6 @@
+cz\cvut\fel\nss\orderqueryservice\config\CacheConfig.class
+cz\cvut\fel\nss\orderqueryservice\graphql\OrderResolver.class
+cz\cvut\fel\nss\orderqueryservice\model\OrderDocument.class
+cz\cvut\fel\nss\orderqueryservice\service\OrderService.class
+cz\cvut\fel\nss\orderqueryservice\model\OrderDocument$OrderItemDocument.class
+cz\cvut\fel\nss\orderqueryservice\repository\OrderRepository.class

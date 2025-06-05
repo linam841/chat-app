@@ -1,0 +1,4 @@
+cz\cvut\fel\nss\ordercommandservice\config\TestKafkaConfig.class
+cz\cvut\fel\nss\ordercommandservice\controller\OrderControllerIntegrationTest.class
+cz\cvut\fel\nss\ordercommandservice\config\TestSecurityConfig.class
+cz\cvut\fel\nss\ordercommandservice\pipeline\TechnicalValidationFilterTest.class
